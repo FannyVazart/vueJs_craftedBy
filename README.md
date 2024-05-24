@@ -45,7 +45,3 @@ Install Node.js : https://nodejs.org/en
 npm install -g npm
 
 npm create vue@latest
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7de9bff9-f798-4b50-8951-bb25439d8dd1/861ce8cd-57df-4572-af84-2931d8dbe358/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7de9bff9-f798-4b50-8951-bb25439d8dd1/8d633b7d-d9cf-4109-b102-3c8334f0c399/Untitled.png)
