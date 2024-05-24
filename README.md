@@ -10,15 +10,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-Install Node.js : https://nodejs.org/en
-
-```sh
-npm install -g npm
-```
-
-```sh
-npm create vue@latest
-```
+You should have Node.js : https://nodejs.org/en
 
 ### Compile and Hot-Reload for Development
 
