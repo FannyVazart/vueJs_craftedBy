@@ -42,6 +42,10 @@ npm run lint
 
 Install Node.js : https://nodejs.org/en
 
+```sh
 npm install -g npm
+```
 
+```sh
 npm create vue@latest
+```
