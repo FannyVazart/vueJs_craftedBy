@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="boubou max-w-screen-2xl mx-auto items-center container flex">
+  <div class="boubou max-w-screen-xl mx-auto items-center container flex">
       Rassurez-vous !!
   </div>
 </template>
