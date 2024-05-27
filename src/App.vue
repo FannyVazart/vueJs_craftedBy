@@ -11,7 +11,9 @@ import Reassurance from '@/components/Reassurance.vue'
 <!--        <RouterLink to="/about">About</RouterLink>-->
   </header>
 
+  <main>
   <RouterView />
+  </main>
 
   <div class="bordereau">
    <Reassurance> </Reassurance>
