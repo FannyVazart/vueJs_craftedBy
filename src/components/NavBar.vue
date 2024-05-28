@@ -3,7 +3,7 @@
     <nav class="max-w-screen-xl mx-auto items-center">
       <ul class="flex md:space-x-2 md:mt-0 justify-between">
         <li>
-          <img alt="logo" class="logo" src="@/assets/logo_complet.svg" width="270px"/>
+          <RouterLink to="/"><img alt="logo" class="logo" src="@/assets/logo_complet.svg" width="270px"/></RouterLink>
         </li>
         <li>
           <input type="text" id="email-adress-icon" class="text-indigo-950 border border-amber-500 rounded-3xl pl-5 p-2" placeholder="Rechercher">
@@ -31,7 +31,7 @@
             </div>
           </li>
           <li>
-            <a href="#" class=""><img src="@/components/icons/cart.svg" width="40"></a>
+            <RouterLink to="/cart"><img src="@/components/icons/cart.svg" width="40"></RouterLink>
           </li>
           <li>
             <a href="#" class=""><img src="@/components/icons/plusOne.svg" width="30"></a>

@@ -7,27 +7,29 @@
 
 </div>
 
-
   <div class="px-12 pt-6 pb-12 max-w-screen-2xl mx-auto">
     <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
       <li v-for="product in products" :key="product.id"
           class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
+        <RouterLink :to="{ name: 'product', params: { id: product.id } }">
         <div class="flex w-full items-center justify-between space-x-6 p-6">
           <div class="flex-1 truncate">
             <div class="flex items-center justify-center">
-              <img class="h-20" :src="product.image" alt="" />
+              <img class="h-72" :src="product.image" alt="" />
             </div>
             <h3 class="truncate text-2xl font-medium text-gray-900">{{ product.title }}</h3>
             <p class="mt-1 truncate text-sm text-gray-500">{{ product.description }}</p>
           </div>
         </div>
+        </RouterLink>
         <div>
           <div class="-mt-px flex divide-x divide-gray-200">
             <div class="flex w-0 flex-1 ">
               <p
                 class="justify-between p-6 relative -mr-px inline-flex w-0 flex-1 items-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-2xl font-semibold text-gray-900">
                 {{ product.price }} €
-                <button id="addToCart" class="rounded-xl bg-amber-700 text-amber-100 p-2 text-sm">Ajouter au panier</button>
+                <AddToCartButton :product="product"></AddToCartButton>
               </p>
 
             </div>
@@ -40,5 +42,6 @@
 
 <script setup>
 import { useFetch } from '@vueuse/core'
-const { data: products } = useFetch('https://fakestoreapi.com/products?limit=30').json()
+import AddToCartButton from '@/components/AddToCartButton.vue'
+const { data: products } = useFetch('https://fakestoreapi.com/products?limit=20').json()
 </script>
