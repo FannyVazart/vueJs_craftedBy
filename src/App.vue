@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue'
 import Reassurance from '@/components/Reassurance.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -19,7 +20,7 @@ import Reassurance from '@/components/Reassurance.vue'
    <Reassurance> </Reassurance>
   </div>
   <footer>
-    boubou
+    <Footer></Footer>
   </footer>
 
 </template>

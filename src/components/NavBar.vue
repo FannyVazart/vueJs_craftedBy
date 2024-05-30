@@ -11,7 +11,7 @@
 
         <div class="flex md:space-x-4 items-center">
           <li>
-            <a href="#" class="border border-b-blue-100 rounded-2xl p-1.5 pl-2.5 pr-2.5">Sign in</a>
+            <RouterLink to="/identification"><button class="border border-b-blue-100 rounded-2xl p-1.5 pl-2.5 pr-2.5">Sign in</button></RouterLink>
           </li>
           <li>
             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class=""><img src="@/components/icons/Menu.svg" width="35"></button>
@@ -31,7 +31,7 @@
             </div>
           </li>
           <li>
-            <RouterLink to="/cart"><img src="@/components/icons/cart.svg" width="40"></RouterLink>
+            <RouterLink to="/cart"><cart-icon></cart-icon></RouterLink>
           </li>
           <li>
             <a href="#" class=""><img src="@/components/icons/plusOne.svg" width="30"></a>
@@ -44,6 +44,7 @@
 </template>
 
 <script setup>
+import CartIcon from '@/components/CartIcon.vue'
 </script>
 
 <style scoped>

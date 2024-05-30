@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import ProductPreview from '@/components/ProductPreviewOrder.vue'
 import ProductView from '@/views/ProductView.vue'
 import CartView from '@/views/CartView.vue'
+import IdentificationView from '@/views/IdentificationView.vue'
+import ShipAndPayView from '@/views/ShipAndPayView.vue'
+import OrderOKView from '@/views/OrderOKView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,11 +30,26 @@ const router = createRouter({
       component: ProductView
     },
     {
+      path: '/identification',
+      name: 'identification',
+      component: IdentificationView
+    },
+    {
+      path: '/shippay',
+      name: 'shipandpay',
+      component: ShipAndPayView
+    },
+    {
+      path: '/orderok',
+      name: 'orderok',
+      component: OrderOKView
+    },
+    {
       path: '/cart',
       name: 'cart',
       component: CartView
     }
-  ]
+  ],
 })
 
 export default router
