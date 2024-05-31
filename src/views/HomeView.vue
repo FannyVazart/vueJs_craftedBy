@@ -11,7 +11,7 @@
     <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
       <li v-for="product in products" :key="product.id"
-          class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
+          class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow hover:shadow-2xl">
         <RouterLink :to="{ name: 'product', params: { id: product.id } }">
         <div class="flex w-full items-center justify-between space-x-6 p-6">
           <div class="flex-1 truncate">
